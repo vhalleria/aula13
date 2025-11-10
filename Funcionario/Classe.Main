@@ -1,0 +1,15 @@
+// Classe Principal (Main)
+public class Main {
+    public static void main(String[] args) {
+        Funcionario funcionario;
+
+        funcionario = new FuncionarioAssalariado("João", 3000.00);
+        System.out.println(funcionario.nome + " - Salário: R$ " + funcionario.calcularSalario());
+
+        funcionario = new FuncionarioHorista("Maria", 50.00, 160);
+        System.out.println(funcionario.nome + " - Salário: R$ " + funcionario.calcularSalario());
+
+        funcionario = new FuncionarioComissionado("Carlos", 20000.00, 0.10);
+        System.out.println(funcionario.nome + " - Salário: R$ " + funcionario.calcularSalario());
+    }
+}
